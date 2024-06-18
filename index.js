@@ -1,6 +1,4 @@
-import { Text, View } from "react-native";
 import dayjs from "dayjs";
-import { useEffect, useState } from "react";
 import { chooseQuote } from "@/utils/utils";
 
 export default function Index() {

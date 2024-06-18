@@ -1,8 +1,7 @@
-import { IQuote } from "@/interfaces";
 import * as timeQuotes from "../assets/data/time-quotes.json";
 
-export const chooseQuote = (time: string) => {
-  const quotes: IQuote[] = timeQuotes[time as keyof typeof timeQuotes];
+export const chooseQuote = (time) => {
+  const quotes = timeQuotes[time];
 
   const quoteIndex = Math.floor(Math.random() * quotes.length);
 
